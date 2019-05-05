@@ -94,30 +94,28 @@ this.ScenarioInitialize(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("2 and 3.1 3.3 presentation request page all marked required fields are required", null, new string[] {
                         "web"});
-#line 11
+#line 10
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 16
+#line 15
  testRunner.Given("I can open visma home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 17
+#line 16
  testRunner.Then("accept cookies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 18
+#line 17
  testRunner.Then("open presentation request form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 19
- testRunner.Then("0 X errors are present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "formmodel"});
             table1.AddRow(new string[] {
                         "{ \'Name\':\'name\', \'Surname\':\'surname\', \'Company\':\'company\', \'Email\':\'xx@xx.xx\', \'P" +
                             "hone\':\'phone\', \'GDPR\':false }"});
-#line 20
+#line 18
  testRunner.Then("I fill in the following form", ((string)(null)), table1, "Then ");
-#line 23
+#line 21
  testRunner.Then("click form submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 24
+#line 23
  testRunner.Then("1 X errors are present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 25
+#line 24
  testRunner.Then("clear presentation request form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -125,9 +123,9 @@ this.ScenarioInitialize(scenarioInfo);
             table2.AddRow(new string[] {
                         "{ \'Name\':null, \'Surname\':null, \'Company\':null, \'Email\':null, \'Phone\':null, \'GDPR\'" +
                             ":true }"});
-#line 26
+#line 25
  testRunner.Then("I fill in the following form", ((string)(null)), table2, "Then ");
-#line 29
+#line 28
  testRunner.Then("click form submit button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 30
  testRunner.Then("5 X errors are present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -182,11 +180,17 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 62
  testRunner.Given("I can open visma home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 63
+ testRunner.Then("accept cookies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 64
+ testRunner.Then("open presentation request form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 65
+ testRunner.Then("go to main page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 66
  testRunner.Then("scroll blog element into view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 67
- testRunner.Then("build blog teaser model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 68
+ testRunner.Then("build blog teaser model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 69
  testRunner.Then("open every blog record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -199,16 +203,18 @@ this.ScenarioInitialize(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("5 visit all social links in footer", null, new string[] {
                         "web"});
-#line 71
+#line 72
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 73
+#line 74
  testRunner.Given("I can open visma home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 75
- testRunner.Then("scroll social link elements into view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("accept cookies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 76
+ testRunner.Then("scroll social link elements into view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 78
  testRunner.Then("build social links model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 77
+#line 79
  testRunner.Then("visit every social link record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -236,16 +242,16 @@ this.ScenarioInitialize(scenarioInfo);
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("6 Language select change page language and domain", null, @__tags);
-#line 80
+#line 82
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 82
- testRunner.Given("I can open visma home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 84
- testRunner.Then("scroll language select element into view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 85
+ testRunner.Given("I can open visma home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 87
+ testRunner.Then("scroll language select element into view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 88
  testRunner.Then(string.Format("footer country select {0}", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 86
+#line 89
  testRunner.Then(string.Format("opened page has {0} and url contains {1}", language, domain), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

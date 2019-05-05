@@ -6,7 +6,6 @@ namespace SpecFlow.Helpers
     {
         public AssertHelper()
         {
-
         }
 
         public void TwoStringsMatch(string Expected, string Actual)
