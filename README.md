@@ -25,4 +25,4 @@ not so pretty way
 1. open terminal 
 2. cd to <project_dir>
 3. cd .\packages\NUnit.ConsoleRunner.3.10.0\tools
-4. nunit3-console.exe --testparam:BrowserName=Firefox ..\..\..\SpecFlow\bin\Debug\SpecFlow.dll
+4. nunit3-console.exe --testparam:BrowserName=Firefox ..\\..\\..\\SpecFlow\bin\Debug\SpecFlow.dll
