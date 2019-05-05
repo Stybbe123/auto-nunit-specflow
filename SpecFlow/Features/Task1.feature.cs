@@ -236,16 +236,16 @@ this.ScenarioInitialize(scenarioInfo);
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("6 Language select change page language and domain", null, @__tags);
-#line 81
+#line 80
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 83
+#line 82
  testRunner.Given("I can open visma home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 85
+#line 84
  testRunner.Then("scroll language select element into view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 86
+#line 85
  testRunner.Then(string.Format("footer country select {0}", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 87
+#line 86
  testRunner.Then(string.Format("opened page has {0} and url contains {1}", language, domain), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

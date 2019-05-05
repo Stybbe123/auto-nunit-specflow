@@ -76,7 +76,6 @@ Scenario: 5 visit all social links in footer
 	Then build social links model
 	Then visit every social link record
 
-
 @web
 Scenario Outline: 6 Language select change page language and domain
 #6. Check that page changes location (url and language) when switching to another country.
